@@ -1,0 +1,19 @@
+
+  EXCEPTIONS.PHP
+  Setup handlers for unprocessed errors and exceptions.
+  
+  Information about any unexpected or unhandled error will be formatted and 
+  bundled with a dump of session variables (GET, POST, FILES, SESSION, SERVER). This
+  is inluded in an email that is sent to the server administrator. Unattended servers will 
+  find this useful. Alternatively, if the session variable Debug="Yes", the information will 
+  be echoed back to the screen instead of the email.
+  
+  Handlers
+  OnError, OnException
+  
+  Globals
+  $page    page to return to user after reporting error. The created error
+           will be in session variable "Fatal_Error".
+  
+  Terence Lein, tlein@optonline.net
+  
